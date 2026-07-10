@@ -1,0 +1,273 @@
+@import url(
+'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'
+);
+
+
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+
+}
+
+
+
+body{
+
+background:#F8FAFC;
+color:#1E293B;
+
+}
+
+
+
+
+/* Navbar */
+
+
+.navbar{
+
+height:70px;
+padding:0 8%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:white;
+box-shadow:0 5px 20px #ddd;
+
+}
+
+
+
+.logo{
+
+font-size:25px;
+font-weight:700;
+color:#2563EB;
+
+}
+
+
+
+.logo i{
+
+margin-right:10px;
+
+}
+
+
+
+.navbar ul{
+
+display:flex;
+list-style:none;
+gap:30px;
+
+}
+
+
+
+.navbar a{
+
+text-decoration:none;
+color:#1E293B;
+
+}
+
+
+
+.signup-btn{
+
+background:#2563EB;
+color:white!important;
+padding:10px 20px;
+border-radius:20px;
+
+}
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+height:90vh;
+display:flex;
+align-items:center;
+padding:0 10%;
+background:
+linear-gradient(
+135deg,
+#2563EB,
+#4F46E5
+);
+
+color:white;
+
+}
+
+
+
+.hero h1{
+
+font-size:55px;
+max-width:700px;
+
+}
+
+
+
+.subtitle{
+
+font-size:22px;
+margin:20px 0;
+
+}
+
+
+
+.hero p{
+
+max-width:700px;
+
+}
+
+
+
+
+.buttons{
+
+margin-top:30px;
+
+}
+
+
+
+.buttons a{
+
+background:white;
+color:#2563EB;
+padding:13px 30px;
+border-radius:25px;
+text-decoration:none;
+margin-right:20px;
+
+}
+
+
+
+.buttons .login{
+
+background:transparent;
+color:white;
+border:2px solid white;
+
+}
+
+
+
+
+/* FEATURES */
+
+
+.features{
+
+padding:80px 8%;
+text-align:center;
+
+}
+
+
+
+.features h2{
+
+font-size:35px;
+margin-bottom:50px;
+
+}
+
+
+
+.feature-container{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+
+
+
+.card{
+
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px #ddd;
+
+}
+
+
+
+.card i{
+
+font-size:35px;
+color:#2563EB;
+
+}
+
+
+
+.card h3{
+
+margin:20px;
+
+}
+
+
+
+
+/* ABOUT */
+
+
+.about{
+
+padding:80px 15%;
+text-align:center;
+background:white;
+
+}
+
+
+.about h2{
+
+font-size:35px;
+margin-bottom:20px;
+
+}
+
+
+
+.about p{
+
+margin:20px;
+
+}
+
+
+
+
+footer{
+
+padding:20px;
+text-align:center;
+background:#1E293B;
+color:white;
+
+}
