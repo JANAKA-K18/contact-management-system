@@ -1,47 +1,108 @@
-const form = document.getElementById("signupForm");
+import { auth, db } from "./firebase.js";
 
-form.addEventListener("submit", function(e){
+import {
+    createUserWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
+
+import {
+    doc,
+    setDoc
+} from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+
+const signupForm = document.getElementById("signupForm");
+
+signupForm.addEventListener("submit", async (e) => {
 
     e.preventDefault();
 
-    const fullname = document.getElementById("fullname").value.trim();
+    const fullName = document.getElementById("fullName").value.trim();
+
     const email = document.getElementById("email").value.trim();
+
     const password = document.getElementById("password").value;
+
     const confirmPassword = document.getElementById("confirmPassword").value;
+
     const terms = document.getElementById("terms").checked;
 
-    if(fullname===""){
+    if (fullName === "") {
 
         alert("Please enter your full name.");
+
         return;
+
     }
 
-    const emailPattern=/^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (email === "") {
 
-    if(!email.match(emailPattern)){
+        alert("Please enter your email.");
 
-        alert("Enter a valid email address.");
         return;
+
     }
 
-    if(password.length<6){
+    if (password.length < 6) {
 
         alert("Password must contain at least 6 characters.");
+
         return;
+
     }
 
-    if(password!==confirmPassword){
+    if (password !== confirmPassword) {
 
         alert("Passwords do not match.");
+
         return;
+
     }
 
-    if(!terms){
+    if (!terms) {
 
-        alert("Please accept Terms & Conditions.");
+        alert("Please accept the Terms & Conditions.");
+
         return;
+
     }
 
-    alert("Validation Successful!");
+    try {
+
+        const userCredential = await createUserWithEmailAndPassword(
+
+            auth,
+
+            email,
+
+            password
+
+        );
+
+        await setDoc(
+
+            doc(db, "users", userCredential.user.uid),
+
+            {
+
+                fullName: fullName,
+
+                email: email,
+
+                createdAt: new Date()
+
+            }
+
+        );
+
+        alert("Account created successfully!");
+
+        window.location.href = "dashboard.html";
+
+    }
+
+    catch (error) {
+
+        alert(error.message);
+
+    }
 
 });
