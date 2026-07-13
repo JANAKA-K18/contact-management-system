@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+.left-panel{
+    width:45%;
+    background:linear-gradient(135deg,#2563EB,#4F46E5);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+}
+
+.content{
+    max-width:450px;
+}
+
+.logo-icon{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.content h1{
+    font-size:42px;
+}
+
+.content h2{
+    margin:20px 0;
+}
+
+.content p{
+    line-height:1.8;
+}
+
+.right-panel{
+    width:55%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:white;
+}
+
+form{
+    width:420px;
+}
+
+form h2{
+    margin-bottom:10px;
+    color:#1E293B;
+}
+
+.sub-title{
+    margin-bottom:30px;
+    color:#64748B;
+}
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px;
+    border:1px solid #CBD5E1;
+    border-radius:10px;
+    outline:none;
+}
+
+.password-box{
+    position:relative;
+}
+
+.password-box i{
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:#64748B;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+.options a{
+    color:#2563EB;
+    text-decoration:none;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#2563EB;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1D4ED8;
+}
+
+.signup-text{
+    margin-top:25px;
+    text-align:center;
+}
+
+.signup-text a{
+    color:#2563EB;
+    text-decoration:none;
+    font-weight:600;
+}
+
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+.left-panel,
+.right-panel{
+    width:100%;
+}
+
+.left-panel{
+    height:35%;
+}
+
+.right-panel{
+    height:65%;
+}
+
+form{
+    width:90%;
+}
+
+}
