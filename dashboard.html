@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | ContactHub</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-address-book"></i>
+
+            <h2>ContactHub</h2>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+
+                <a href="dashboard.html">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="add-contact.html">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    Add Contact
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="view-contact.html">
+
+                    <i class="fa-solid fa-address-card"></i>
+
+                    View Contacts
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="profile.html">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    My Profile
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#" id="logoutBtn">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Logout
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+
+                    Welcome Back,
+
+                    <span id="userName">User</span>
+
+                    👋
+
+                </h1>
+
+                <p>
+
+                    Manage your contacts quickly and securely.
+
+                </p>
+
+            </div>
+
+        </header>
+
+        <!-- Statistics -->
+
+        <section class="stats">
+
+            <div class="card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>Total Contacts</h3>
+
+                <h2 id="totalContacts">0</h2>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-star"></i>
+
+                <h3>Favorites</h3>
+
+                <h2>0</h2>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+                <h3>Categories</h3>
+
+                <h2>0</h2>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>Recent</h3>
+
+                <h2>0</h2>
+
+            </div>
+
+        </section>
+
+        <!-- Quick Actions -->
+
+        <section class="quick-actions">
+
+            <h2>Quick Actions</h2>
+
+            <div class="action-grid">
+
+                <a href="add-contact.html" class="action-card">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    <h3>Add Contact</h3>
+
+                    <p>Create a new contact.</p>
+
+                </a>
+
+                <a href="view-contact.html" class="action-card">
+
+                    <i class="fa-solid fa-address-card"></i>
+
+                    <h3>View Contacts</h3>
+
+                    <p>Manage saved contacts.</p>
+
+                </a>
+
+                <a href="profile.html" class="action-card">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <h3>Profile</h3>
+
+                    <p>Manage your account.</p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Contacts -->
+
+        <section class="recent">
+
+            <h2>Recent Contacts</h2>
+
+            <div class="recent-box">
+
+                <p>
+
+                    No contacts available.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+
+</html>
