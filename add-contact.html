@@ -134,3 +134,297 @@
         <div class="form-container">
 
             <form id="contactForm">
+                <!-- Row 1 -->
+
+<div class="form-row">
+
+    <div class="input-group">
+
+        <label for="fullName">
+
+            <i class="fa-solid fa-user"></i>
+
+            Full Name <span class="required">*</span>
+
+        </label>
+
+        <input
+            type="text"
+            id="fullName"
+            placeholder="Enter full name"
+            required>
+
+    </div>
+
+</div>
+
+<!-- Row 2 -->
+
+<div class="form-row">
+
+    <div class="input-group">
+
+        <label for="mobile">
+
+            <i class="fa-solid fa-phone"></i>
+
+            Mobile Number <span class="required">*</span>
+
+        </label>
+
+        <input
+            type="tel"
+            id="mobile"
+            required>
+
+        <small>
+
+            Select the country and enter the phone number.
+
+        </small>
+
+    </div>
+
+</div>
+
+<!-- Row 3 -->
+
+<div class="form-row two-column">
+
+    <div class="input-group">
+
+        <label for="alternateMobile">
+
+            <i class="fa-solid fa-mobile-screen"></i>
+
+            Alternative Number
+
+        </label>
+
+        <input
+            type="tel"
+            id="alternateMobile">
+
+    </div>
+
+    <div class="input-group">
+
+        <label for="email">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            Email Address
+
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="example@email.com">
+
+    </div>
+
+</div>
+
+<!-- Row 4 -->
+
+<div class="form-row two-column">
+
+    <div class="input-group">
+
+        <label for="company">
+
+            <i class="fa-solid fa-building"></i>
+
+            Company
+
+        </label>
+
+        <input
+            type="text"
+            id="company"
+            placeholder="Company name">
+
+    </div>
+
+    <div class="input-group">
+
+        <label for="designation">
+
+            <i class="fa-solid fa-briefcase"></i>
+
+            Designation / Role
+
+        </label>
+
+        <input
+            type="text"
+            id="designation"
+            placeholder="Software Engineer">
+
+    </div>
+
+</div>
+
+<!-- Row 5 -->
+
+<div class="form-row">
+
+    <div class="input-group">
+
+        <label for="category">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            Category <span class="required">*</span>
+
+        </label>
+
+        <select id="category" required>
+
+            <option value="">Choose Category</option>
+
+            <option value="Family">👨‍👩‍👧 Family</option>
+
+            <option value="Friends">👥 Friends</option>
+
+            <option value="Work">💼 Work</option>
+
+            <option value="Business">🏢 Business</option>
+
+            <option value="College">🎓 College</option>
+
+            <option value="Others">📁 Others</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+<!-- Row 6 -->
+
+<div class="form-row two-column">
+
+    <div class="input-group">
+
+        <label for="birthday">
+
+            <i class="fa-solid fa-cake-candles"></i>
+
+            Birthday
+
+        </label>
+
+        <input
+            type="date"
+            id="birthday">
+
+    </div>
+
+    <div class="input-group">
+
+        <label for="address">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            Address
+
+        </label>
+
+        <input
+            type="text"
+            id="address"
+            placeholder="Address">
+
+    </div>
+
+</div>
+
+<!-- Row 7 -->
+
+<div class="form-row">
+
+    <div class="input-group">
+
+        <label for="notes">
+
+            <i class="fa-solid fa-note-sticky"></i>
+
+            Notes
+
+        </label>
+
+        <textarea
+            id="notes"
+            rows="4"
+            placeholder="Additional information..."></textarea>
+
+    </div>
+
+</div>
+
+<!-- Row 8 -->
+
+<div class="favorite-box">
+
+    <label class="switch">
+
+        <input
+            type="checkbox"
+            id="favorite">
+
+        <span class="slider"></span>
+
+    </label>
+
+    <span>
+
+        ⭐ Mark as Favourite Contact
+
+    </span>
+
+</div>
+
+<!-- Buttons -->
+
+<div class="button-group">
+
+    <button
+        type="submit"
+        class="save-btn">
+
+        <i class="fa-solid fa-floppy-disk"></i>
+
+        Save Contact
+
+    </button>
+
+    <button
+        type="reset"
+        class="reset-btn">
+
+        <i class="fa-solid fa-rotate-left"></i>
+
+        Reset
+
+    </button>
+
+</div>
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<!-- intl-tel-input -->
+
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+
+<script type="module" src="js/add-contact.js"></script>
+
+</body>
+
+</html>
