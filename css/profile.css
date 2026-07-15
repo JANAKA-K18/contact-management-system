@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: #F4F7FE;
+    color: #1E293B;
+}
+
+
+/* =========================================
+   PROFILE HEADER
+========================================= */
+
+.profile-header {
+    margin-bottom: 30px;
+}
+
+
+.profile-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1E293B;
+    margin-bottom: 6px;
+}
+
+
+.profile-header p {
+    font-size: 15px;
+    color: #64748B;
+}
+
+
+/* =========================================
+   PROFILE CARD
+========================================= */
+
+.profile-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================
+   PROFILE TOP
+========================================= */
+
+.profile-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+
+.profile-avatar {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2563EB;
+    color: #FFFFFF;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+    font-weight: 600;
+
+    flex-shrink: 0;
+}
+
+
+.profile-title h2 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #1E293B;
+    margin-bottom: 5px;
+}
+
+
+.profile-title p {
+    font-size: 14px;
+    color: #64748B;
+}
+
+
+/* =========================================
+   PROFILE SECTION
+========================================= */
+
+.profile-section {
+    padding-top: 30px;
+}
+
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+
+.section-heading h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1E293B;
+    margin-bottom: 5px;
+}
+
+
+.section-heading p {
+    font-size: 14px;
+    color: #64748B;
+}
+
+
+/* =========================================
+   PROFILE INFORMATION GRID
+========================================= */
+
+.profile-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.profile-info-item {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 18px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+.info-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #64748B;
+}
+
+
+.info-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1E293B;
+    word-break: break-word;
+}
+
+
+/* =========================================
+   PROFILE ACTIONS
+========================================= */
+
+.profile-actions {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+    padding-top: 25px;
+
+    border-top: 1px solid #E2E8F0;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.primary-btn,
+.secondary-btn {
+    padding: 11px 20px;
+
+    border-radius: 8px;
+    border: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.primary-btn {
+    background: #2563EB;
+    color: #FFFFFF;
+}
+
+
+.primary-btn:hover {
+    background: #1D4ED8;
+}
+
+
+.secondary-btn {
+    background: #E2E8F0;
+    color: #334155;
+}
+
+
+.secondary-btn:hover {
+    background: #CBD5E1;
+}
+
+
+/* =========================================
+   PROFILE MODAL
+========================================= */
+
+.profile-modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(15, 23, 42, 0.55);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+
+/* Modal shown using JavaScript */
+
+.profile-modal.show {
+    display: flex;
+}
+
+
+/* =========================================
+   MODAL CONTENT
+========================================= */
+
+.profile-modal-content {
+    width: 100%;
+    max-width: 480px;
+
+    background: #FFFFFF;
+
+    border-radius: 14px;
+
+    padding: 30px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   MODAL HEADER
+========================================= */
+
+.modal-header {
+    margin-bottom: 25px;
+}
+
+
+.modal-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1E293B;
+    margin-bottom: 6px;
+}
+
+
+.modal-header p {
+    font-size: 14px;
+    color: #64748B;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #334155;
+
+    margin-bottom: 8px;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    color: #1E293B;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.form-group input:focus {
+    border-color: #2563EB;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.1);
+}
+
+
+.form-group input:disabled {
+    background: #F1F5F9;
+    color: #64748B;
+    cursor: not-allowed;
+}
+
+
+.form-group small {
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 12px;
+
+    color: #94A3B8;
+}
+
+
+/* =========================================
+   MODAL ACTIONS
+========================================= */
+
+.modal-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   RESPONSIVE TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .profile-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .profile-header h1 {
+        font-size: 27px;
+    }
+
+
+    .profile-card {
+        padding: 22px;
+    }
+
+
+    .profile-top {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .profile-avatar {
+        width: 65px;
+        height: 65px;
+
+        font-size: 26px;
+    }
+
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+
+    .profile-modal-content {
+        padding: 22px;
+    }
+
+
+    .modal-actions {
+        flex-direction: column-reverse;
+    }
+
+}
