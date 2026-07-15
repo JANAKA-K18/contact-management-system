@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | ContactHub</title>
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <!-- Profile CSS -->
+    <link rel="stylesheet"
+          href="css/profile.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-address-book"></i>
+
+            <h2>ContactHub</h2>
+
+        </div>
+
+
+        <ul class="menu">
+
+            <li>
+
+                <a href="dashboard.html">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="add-contact.html">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    Add Contact
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="view-contact.html">
+
+                    <i class="fa-solid fa-address-card"></i>
+
+                    View Contacts
+
+                </a>
+
+            </li>
+
+
+            <li class="active">
+
+                <a href="profile.html">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    My Profile
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="#"
+                   id="logoutBtn">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Logout
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main class="main-content">
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="profile-header">
+
+            <h1>My Profile</h1>
+
+            <p>
+                View and manage your account information.
+            </p>
+
+        </div>
+
+
+        <!-- =================================
+             PROFILE CARD
+        ================================== -->
+
+        <section class="profile-card">
+
+
+            <!-- PROFILE TOP -->
+
+            <div class="profile-top">
+
+                <div class="profile-avatar"
+                     id="profileAvatar">
+
+                    U
+
+                </div>
+
+
+                <div class="profile-title">
+
+                    <h2 id="profileName">
+
+                        Loading...
+
+                    </h2>
+
+                    <p id="profileEmail">
+
+                        Loading...
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 ACCOUNT INFORMATION
+            ================================== -->
+
+            <div class="profile-section">
+
+                <div class="section-heading">
+
+                    <h3>
+                        Account Information
+                    </h3>
+
+                    <p>
+                        Your personal account details.
+                    </p>
+
+                </div>
+
+
+                <div class="profile-info-grid">
+
+
+                    <!-- FULL NAME -->
+
+                    <div class="profile-info-item">
+
+                        <span class="info-label">
+
+                            Full Name
+
+                        </span>
+
+                        <span class="info-value"
+                              id="displayFullName">
+
+                            Loading...
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="profile-info-item">
+
+                        <span class="info-label">
+
+                            Email Address
+
+                        </span>
+
+                        <span class="info-value"
+                              id="displayEmail">
+
+                            Loading...
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- TOTAL CONTACTS -->
+
+                    <div class="profile-info-item">
+
+                        <span class="info-label">
+
+                            Total Contacts
+
+                        </span>
+
+                        <span class="info-value"
+                              id="profileTotalContacts">
+
+                            0
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- ACCOUNT CREATED -->
+
+                    <div class="profile-info-item">
+
+                        <span class="info-label">
+
+                            Account Created
+
+                        </span>
+
+                        <span class="info-value"
+                              id="accountCreated">
+
+                            Loading...
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 PROFILE ACTIONS
+            ================================== -->
+
+            <div class="profile-actions">
+
+                <button
+                    type="button"
+                    id="editProfileBtn"
+                    class="primary-btn">
+
+                    Edit Profile
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="changePasswordBtn"
+                    class="secondary-btn">
+
+                    Change Password
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================
+             EDIT PROFILE MODAL
+        ================================== -->
+
+        <div class="profile-modal"
+             id="editProfileModal">
+
+            <div class="profile-modal-content">
+
+                <div class="modal-header">
+
+                    <div>
+
+                        <h2>
+                            Edit Profile
+                        </h2>
+
+                        <p>
+                            Update your account information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form id="editProfileForm">
+
+
+                    <div class="form-group">
+
+                        <label for="editFullName">
+
+                            Full Name
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="editFullName"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="editEmail">
+
+                            Email Address
+
+                        </label>
+
+                        <input
+                            type="email"
+                            id="editEmail"
+                            disabled>
+
+                        <small>
+                            Email address cannot be changed from this page.
+                        </small>
+
+                    </div>
+
+
+                    <div class="modal-actions">
+
+                        <button
+                            type="button"
+                            id="cancelEditBtn"
+                            class="secondary-btn">
+
+                            Cancel
+
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="primary-btn">
+
+                            Save Changes
+
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================
+             CHANGE PASSWORD MODAL
+        ================================== -->
+
+        <div class="profile-modal"
+             id="passwordModal">
+
+            <div class="profile-modal-content">
+
+                <div class="modal-header">
+
+                    <div>
+
+                        <h2>
+                            Change Password
+                        </h2>
+
+                        <p>
+                            Enter a new password for your account.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form id="passwordForm">
+
+
+                    <div class="form-group">
+
+                        <label for="newPassword">
+
+                            New Password
+
+                        </label>
+
+                        <input
+                            type="password"
+                            id="newPassword"
+                            placeholder="Enter new password"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="confirmNewPassword">
+
+                            Confirm New Password
+
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmNewPassword"
+                            placeholder="Confirm new password"
+                            required>
+
+                    </div>
+
+
+                    <div class="modal-actions">
+
+                        <button
+                            type="button"
+                            id="cancelPasswordBtn"
+                            class="secondary-btn">
+
+                            Cancel
+
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="primary-btn">
+
+                            Update Password
+
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+
+<!-- =====================================
+     PROFILE JAVASCRIPT
+====================================== -->
+
+<script
+    type="module"
+    src="js/profile.js">
+</script>
+
+
+</body>
+
+</html>

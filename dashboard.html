@@ -19,7 +19,9 @@
 
 <div class="dashboard">
 
-    <!-- Sidebar -->
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
 
     <aside class="sidebar">
 
@@ -31,7 +33,10 @@
 
         </div>
 
+
         <ul class="menu">
+
+            <!-- Dashboard -->
 
             <li class="active">
 
@@ -45,6 +50,9 @@
 
             </li>
 
+
+            <!-- Add Contact -->
+
             <li>
 
                 <a href="add-contact.html">
@@ -56,6 +64,9 @@
                 </a>
 
             </li>
+
+
+            <!-- View Contacts -->
 
             <li>
 
@@ -69,6 +80,9 @@
 
             </li>
 
+
+            <!-- Profile -->
+
             <li>
 
                 <a href="profile.html">
@@ -80,6 +94,9 @@
                 </a>
 
             </li>
+
+
+            <!-- Logout -->
 
             <li>
 
@@ -97,11 +114,17 @@
 
     </aside>
 
-    <!-- Main Content -->
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
 
     <main class="main-content">
 
-        <!-- Header -->
+
+        <!-- =================================
+             HEADER
+        ================================== -->
 
         <header class="topbar">
 
@@ -118,18 +141,22 @@
                 </h1>
 
                 <p>
-
                     Manage your contacts quickly and securely.
-
                 </p>
 
             </div>
 
         </header>
 
-        <!-- Statistics -->
+
+        <!-- =================================
+             STATISTICS
+        ================================== -->
 
         <section class="stats">
+
+
+            <!-- Total Contacts -->
 
             <div class="card">
 
@@ -141,15 +168,21 @@
 
             </div>
 
+
+            <!-- Favourite Contacts -->
+
             <div class="card">
 
                 <i class="fa-solid fa-star"></i>
 
                 <h3>Favorites</h3>
 
-                <h2>0</h2>
+                <h2 id="favouriteCount">0</h2>
 
             </div>
+
+
+            <!-- Categories -->
 
             <div class="card">
 
@@ -157,9 +190,12 @@
 
                 <h3>Categories</h3>
 
-                <h2>0</h2>
+                <h2 id="categoryCount">0</h2>
 
             </div>
+
+
+            <!-- Recent Contacts -->
 
             <div class="card">
 
@@ -167,63 +203,99 @@
 
                 <h3>Recent</h3>
 
-                <h2>0</h2>
+                <h2 id="recentCount">0</h2>
 
             </div>
 
+
         </section>
 
-        <!-- Quick Actions -->
+
+        <!-- =================================
+             QUICK ACTIONS
+        ================================== -->
 
         <section class="quick-actions">
 
             <h2>Quick Actions</h2>
 
+
             <div class="action-grid">
 
-                <a href="add-contact.html" class="action-card">
+
+                <!-- Add Contact -->
+
+                <a href="add-contact.html"
+                   class="action-card">
 
                     <i class="fa-solid fa-user-plus"></i>
 
                     <h3>Add Contact</h3>
 
-                    <p>Create a new contact.</p>
+                    <p>
+                        Create a new contact.
+                    </p>
 
                 </a>
 
-                <a href="view-contact.html" class="action-card">
+
+                <!-- View Contacts -->
+
+                <a href="view-contact.html"
+                   class="action-card">
 
                     <i class="fa-solid fa-address-card"></i>
 
                     <h3>View Contacts</h3>
 
-                    <p>Manage saved contacts.</p>
+                    <p>
+                        Manage saved contacts.
+                    </p>
 
                 </a>
 
-                <a href="profile.html" class="action-card">
+
+                <!-- Profile -->
+
+                <a href="profile.html"
+                   class="action-card">
 
                     <i class="fa-solid fa-user"></i>
 
                     <h3>Profile</h3>
 
-                    <p>Manage your account.</p>
+                    <p>
+                        Manage your account.
+                    </p>
 
                 </a>
+
 
             </div>
 
         </section>
 
-        <!-- Recent Contacts -->
+
+        <!-- =================================
+             RECENT CONTACTS
+        ================================== -->
 
         <section class="recent">
 
-            <h2>Recent Contacts</h2>
+            <h2>
+                Recent Contacts
+            </h2>
+
 
             <div class="recent-box">
 
-                <p>
+                <!--
+                    Recent contacts will be
+                    automatically inserted here
+                    by dashboard.js
+                -->
+
+                <p class="no-contacts">
 
                     No contacts available.
 
@@ -233,11 +305,21 @@
 
         </section>
 
+
     </main>
 
 </div>
 
-<script type="module" src="js/dashboard.js"></script>
+
+<!-- =====================================
+     JAVASCRIPT
+====================================== -->
+
+<script
+    type="module"
+    src="js/dashboard.js">
+</script>
+
 
 </body>
 

@@ -129,18 +129,20 @@ form.addEventListener("submit", async (e) => {
     const country = iti.getSelectedCountryData();
 
     // India validation
+if (country.iso2 === "in") {
 
-    if (country.iso2 === "in") {
+    // Remove spaces and all non-digit characters
+    const indianMobile = mobile.replace(/\D/g, "");
 
-        if (!/^[6-9]\d{9}$/.test(mobile)) {
+    if (!/^[6-9]\d{9}$/.test(indianMobile)) {
 
-            alert("Please enter a valid 10-digit Indian mobile number.");
+        alert("Please enter a valid 10-digit Indian mobile number.");
 
-            return;
-
-        }
+        return;
 
     }
+
+}
 
     // Email validation
 

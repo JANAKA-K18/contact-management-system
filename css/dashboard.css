@@ -296,3 +296,124 @@ body{
 }
 
 }
+/* =========================================
+   RECENT CONTACTS
+========================================= */
+
+.recent {
+    margin-top: 40px;
+}
+
+.recent > h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 25px;
+}
+
+
+/* Recent Contacts Container */
+
+.recent-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 10px 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Individual Contact */
+
+.recent-contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* Remove border from last contact */
+
+.recent-contact-item:last-child {
+    border-bottom: none;
+}
+
+
+/* Contact Name */
+
+.recent-contact-item h3 {
+    margin: 0 0 6px 0;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #1e293b;
+}
+
+
+/* Mobile Number */
+
+.recent-contact-item p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #64748b;
+}
+
+
+/* Category */
+
+.recent-contact-item > span {
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    min-width: 80px;
+
+    text-align: center;
+}
+
+
+/* Empty Recent Contacts Message */
+
+.recent-box > p {
+    padding: 30px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .recent-box {
+        padding: 5px 20px;
+    }
+
+    .recent-contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+}
